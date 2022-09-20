@@ -1,0 +1,13 @@
+#!/usr/bin/python3
+"""
+print_last_digit - print the last digit of a number
+@number: number of which last digit to be find
+Return - on sucess return last digit of number or -1
+"""
+def print_last_digit(number):
+    if number < 0:
+        last_digit = (number*(-1)) % 10
+    else:
+        last_digit = number % 10
+    print(f"{last_digit}", end="")
+    return last_digit
