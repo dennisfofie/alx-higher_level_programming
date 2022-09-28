@@ -1,8 +1,12 @@
 #!/usr/bin/python3
+
+
 def uniq_add(my_list=[]):
+
     new_list = []
     total = 0
-    for  j in my_list:
+
+    for j in my_list:
         if j in new_list:
             continue
         else:
