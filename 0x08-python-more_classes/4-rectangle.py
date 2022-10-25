@@ -1,4 +1,10 @@
-#!/usr/bin/python3
+
+    def perimeter(self):
+        """ returns perimeter
+        """
+        if self.height == 0 or self.width == 0:
+            return 0
+      #!/usr/bin/python3
 """rectangle class
 """
 
@@ -43,18 +49,12 @@ class Rectangle:
         if value < 0:
             raise ValueError('height must be >= 0')
         self.__height = value
-
+ls
     def area(self):
         """returns area
         """
         return self.height * self.width
-
-    def perimeter(self):
-        """ returns perimeter
-        """
-        if self.height == 0 or self.width == 0:
-            return 0
-        return (self.height * 2) + (self.width * 2)
+  return (self.height * 2) + (self.width * 2)
 
     def __str__(self):
         """modifies string object
