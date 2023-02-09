@@ -7,8 +7,7 @@ const path = process.argv[2];
 const file = process.argv[3];
 
 request(path, (error, response, body) => {
-	if (error)
-	{
-		console.error(error);
-	}
+  if (error) {
+    console.error(error);
+  }
 }).pipe(fs.createWriteStream(file));
