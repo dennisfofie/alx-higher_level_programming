@@ -8,7 +8,7 @@ request.get(url, function (err, response, body) {
     console.log(err);
   }
   const data = JSON.parse(body);
-  for (let i = 0; i< data.results[i].length; i++) {
+  for (let i = 0; i < data.results[i].length; i++) {
     if (data.results[i].characters.includes('https://swapi-api.hbtn.io/api/people/18/')) {
       count++;
     }
