@@ -1,13 +1,5 @@
-/*const get = 'https://swapi-api.alx-tools.com/api/people/18';
+#!/usr/bin/node
 
-const request = require('request');
-
-
-request.get(get, (error, response, body) => {
-	const app = JSON.parse(body);
-	let name = app.name;
-})
-*/
  const request = require('request');
 
 const url = process.argv[2];

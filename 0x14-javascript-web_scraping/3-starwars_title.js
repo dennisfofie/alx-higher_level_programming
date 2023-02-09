@@ -1,5 +1,4 @@
 #!/usr/bin/node
-/* making an api call to star wars API */
 
 const request = require('request');
 

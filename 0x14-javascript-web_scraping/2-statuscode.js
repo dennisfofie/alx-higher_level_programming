@@ -1,5 +1,4 @@
 #!/usr/bin/node
-/* using the request module to request for data */
 
 const request = require('request');
 

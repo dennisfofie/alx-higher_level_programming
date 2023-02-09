@@ -1,5 +1,4 @@
 #!/usr/bin/node
-/* using the request module to put webpage content to a file */
 
 const request = require('request');
 const fs = require('fs');

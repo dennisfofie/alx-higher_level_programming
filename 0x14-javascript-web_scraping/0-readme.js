@@ -1,5 +1,4 @@
 #!/usr/bin/node
-/* reading from a file through the command line */
 
 const fs = require('fs');
 
