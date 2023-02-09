@@ -1,17 +1,17 @@
 #!/usr/bin/node
 
- const request = require('request');
-
+const request = require('request');
 const url = process.argv[2];
-request.get(url, (error, response, body) => {
-	const api = JSON.parse(body);
-	let count = 0;	
-	for (let i = 0; api.results[i] !== undefined; i++)
-	{
-		if (api.results[i].characters.includes('https://swapi-api.alx-tools.com/api/people/18'))
-		{
-			count += 1;
-		}
-	}
-	console.log(count);
-})
+request.get(url, function (err, response, body) {
+  let count = 0;
+  if (err) {
+    console.log(err);
+  }
+  const data = JSON.parse(body);
+  for (let i = 0; data.results[i] !== undefined; i++) {
+    if (data.results[i].characters.includes('https://swapi-api.hbtn.io/api/people/18/')) {
+      count++;
+    }
+  }
+  console.log(count);
+});
